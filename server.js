@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Country = require('./models/countryModel');
 const app = express()
 
-app.use(express.json)
+app.use(express.json())
 // routes
 app.get('/country', (req, res) => {
     res.send('Hello country api ')
