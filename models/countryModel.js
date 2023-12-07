@@ -6,17 +6,21 @@ const countrySchema = mongoose.Schema(
             type: String,
             required:[true, "Please enter a country name"]
         },
-        alphaCode2: {
+        alpha2Code: {
             type: String,
-            required:true
+            required:false
         },
-        alphaCode3: {
+        alpha3Code: {
             type: String,
-            required:true
+            required:false
         },
         currency: {
             type: String,
-            required:true
+            required:false
+        },
+        currencyCode: {
+            type: String,
+            required:false
         }
     }
 )
