@@ -21,6 +21,10 @@ const countrySchema = mongoose.Schema(
         currencyCode: {
             type: String,
             required:false
+        },
+        isDeleted: {
+            type: Boolean,
+            default: false
         }
     },
     {
